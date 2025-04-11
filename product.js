@@ -8,3 +8,5 @@ function displayPrice(priceFromServer, discount = 0) {
 
     return `The price is ${priceFromServer}`;
 }
+
+console.log(displayPrice(200, 10));
