@@ -51,3 +51,12 @@ function getDiscountCodeValue(code) {
   };
   return discountCode[code] || 0;
 }
+
+
+function displayPrice(priceFromServer, discount = 0) {
+  const finalPrice = priceFromServer - (priceFromServer * discount / 100);
+  if (discount > 0) {
+    return `The price is ${finalPrice}`;
+  }
+  return `The price is ${priceFromServer}`;
+}

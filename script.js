@@ -3,3 +3,5 @@ function greet () {
 }
 
 alert("Hello World");
+
+console.log("New LIne added");
