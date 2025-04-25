@@ -20,3 +20,5 @@ function getPrice(product) {
     }
     return basePrice;
 }
+
+console.log(getPrice({ price: 200, discount: 10 }));
