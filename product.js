@@ -10,3 +10,13 @@ function displayPrice(priceFromServer, discount = 0) {
 }
 
 console.log(displayPrice(200, 10));
+
+
+
+function getPrice(product) {
+    const basePrice = product.price;
+    if (product.discount && product.discount > 0) {
+        return basePrice - (basePrice * product.discount / 100);
+    }
+    return basePrice;
+}
